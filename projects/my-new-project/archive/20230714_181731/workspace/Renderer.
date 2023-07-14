@@ -1,0 +1,10 @@
+import pygame
+from model import Game
+
+class Renderer:
+    def __init__(self, screen):
+        self.screen = screen
+
+    def render(self, game: Game):
+        # Logic to render the game state on the screen
+        pass

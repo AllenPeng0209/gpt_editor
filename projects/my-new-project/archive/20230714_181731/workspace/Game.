@@ -1,0 +1,55 @@
+from dataclasses import dataclass
+from enum import Enum
+from typing import List, Tuple
+
+@dataclass
+class Point:
+    x: int
+    y: int
+
+class Direction(Enum):
+    UP = 0
+    DOWN = 1
+    LEFT = 2
+    RIGHT = 3
+
+class Snake:
+    def __init__(self):
+        self.head = Point(0, 0)
+        self.body = [self.head]
+        self.direction = Direction.RIGHT
+
+    def move(self):
+        # Logic to move the snake based on the current direction
+        pass
+
+    def change_direction(self, direction: Direction):
+        # Logic to change the direction of the snake
+        pass
+
+class Food:
+    def __init__(self):
+        self.position = Point(0, 0)
+
+    def generate_food(self, snake_body: List[Point]):
+        # Logic to generate new food at a random position
+        pass
+
+class Game:
+    def __init__(self, snake: Snake, food: Food):
+        self.snake = snake
+        self.food = food
+        self.score = 0
+        self.game_over = False
+
+    def update(self):
+        # Logic to update the game state
+        pass
+
+    def is_game_over(self):
+        # Logic to check if the game is over
+        pass
+
+    def quit(self):
+        # Logic to quit the game
+        pass

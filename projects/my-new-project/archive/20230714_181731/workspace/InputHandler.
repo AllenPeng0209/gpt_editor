@@ -1,0 +1,10 @@
+import pygame
+from model import Direction, Snake
+
+class InputHandler:
+    def __init__(self, snake: Snake):
+        self.snake = snake
+
+    def handle_event(self, event):
+        # Logic to handle user input events
+        pass
